@@ -3,7 +3,7 @@ import React from 'react'
 function Navbar() {
   return (
     <section >
-    <nav className="navbar navbar-expand-lg bg-dark fixed-top col-sm-12 " data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg bg-dark fixed-top " data-bs-theme="dark">
       <div className="container-fluid">
           
 

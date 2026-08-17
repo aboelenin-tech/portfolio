@@ -1,65 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-
-
 * {
-  font-family: "Black Ops One", system-ui;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Black Ops One", system-ui !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  box-sizing: border-box !important;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
+body {
+  margin: 0 !important;
+  overflow-x: hidden !important;
+}
+
+
 img {
-  transition: all 0.3s ease-in-out !important;
+  transition: transform 0.3s ease-in-out !important;
 }
 
 img:hover {
-  transform: scale(1.1) !important;
-  border-radius: 3% !important;
+  transform: scale(1.03) !important;
 }
 
+
 .btn {
-  transition: 0.8s ease !important;
+  transition: transform 0.3s ease-in-out !important;
 }
 
 .btn:hover {
-  transform: scale(1.1) !important;
+  transform: scale(1.05) !important;
 }
 
-h1 {
-  transition: 0.8s ease !important;
-}
-
-h1:hover {
-  transform: scale(0.8) !important;
-}
 
 .card {
-  transition: 0.8s ease !important;
+  transition: transform 0.3s ease-in-out !important;
 }
 
 .card:hover {
-  transform: scale(1.1) !important;
+  transform: translateY(-5px) !important;
 }
+
 
 a {
   text-decoration: none !important;
-  transition: all 0.3s ease-in-out !important;
   color: white !important;
 }
 
 a:hover {
   color: yellow !important;
-  
 }
 
+
+.navbar {
+  z-index: 1000 !important;
+}
+
+.navbar-toggler {
+  border: 1px solid white !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+
 form {
-  transition: all 0.3s ease-in-out !important;
+  transition: transform 0.3s ease-in-out !important;
 }
 
 form:hover {
-  transform: scale(1.1) !important;
+  transform: translateY(-3px) !important;
+}
+
+
+@media (max-width: 767.98px) {
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  .card:hover,
+  .btn:hover,
+  img:hover,
+  form:hover {
+    transform: none !important;
+  }
+
 }
