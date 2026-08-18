@@ -72,15 +72,30 @@ form {
 }
 
 form:hover {
-  transform: translateY(-3px) !important;
+  transform: scale(1.1) !important;
+}
+
+.hero-bg-text {
+  font-size: 18rem;
+  opacity: 0.1;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
 @media (max-width: 767.98px) {
 
-  h1 {
+  .hero-content h1 {
     font-size: 2rem !important;
   }
+
+  
+  .hero-bg-text {
+    font-size: 20rem !important;
+    opacity: 0.1;
+    left: 50% !important;
+}
 
   .card:hover,
   .btn:hover,

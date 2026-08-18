@@ -4,12 +4,19 @@ function Hero() {
   return (
     <section
       id="home"
-      className="bg-black text-white min-vh-100 d-flex align-items-center"
+      className="bg-black text-white min-vh-100 d-flex align-items-center position-relative overflow-hidden"
     >
-      <div className="container">
+
+    
+      <h1 className="hero-bg-text position-absolute fw-bold text-white">
+          MY
+                </h1>
+
+      <div className="container position-relative" style={{ zIndex: 1 }}>
         <div className="row align-items-center">
 
           <div className="col-12 col-md-8 col-lg-7">
+
             <h1 className="display-4 fw-bold">
               Frontend that <span className="text-warning">ships</span> fast
             </h1>
@@ -24,6 +31,7 @@ function Hero() {
             </p>
 
             <div className="d-flex flex-column flex-sm-row gap-3 mt-4">
+
               <a href="#projects" className="btn btn-primary">
                 View My Projects
               </a>
@@ -36,11 +44,15 @@ function Hero() {
               >
                 Download CV
               </a>
+
             </div>
+
           </div>
 
         </div>
       </div>
+     
+
     </section>
   )
 }
