@@ -15,6 +15,15 @@ body {
   margin: 0 !important;
   overflow-x: hidden !important;
 }
+html,
+body
+ {
+  overflow-x: hidden;
+}
+
+section {
+  width: 100% !important;
+} 
 
 
 img {
